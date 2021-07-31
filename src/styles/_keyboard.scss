@@ -1,0 +1,32 @@
+.keyboard-canvas {
+    width: 90%;
+    position: absolute;
+    height: 70%;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.calculator-button {
+    font-size: 25px;
+    font-weight: 100;
+    border: 1.2px solid $cod-gray;
+    background-color: $gallery;
+    padding: 0.5rem;
+    width: 25%;
+    height: 20%;
+    border-radius: 2px;
+    &:hover {
+        background-color: white;
+        cursor: pointer;
+        transition: 0.8s ease all;
+    }
+}
+
+.colored {
+    background-color: #FF7F50;
+    color: $gallery;
+    &:hover {
+        background-color: orange;
+    }
+}

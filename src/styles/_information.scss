@@ -1,0 +1,29 @@
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cod-gray;
+    color: $gallery;
+    padding: 1.5rem;
+    &__title{
+        font-size: 2.5rem;
+        margin: 0.5rem 0;
+    }
+    &__p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .info-content {
+        &__title {
+            font-size: 1.5rem;
+        }
+        &__p {
+            font-size: 1rem;
+        }
+    }
+    #calculator {
+        margin: 2rem auto;
+    }
+}
