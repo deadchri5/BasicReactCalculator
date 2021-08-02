@@ -1,8 +1,13 @@
-import mathjs, { evaluate, round} from 'mathjs';
+import { evaluate, round } from 'mathjs';
 
 const Operations = {
   calculateResult: (operation) => {
-    return round(evaluate(operation), 6).toString();
+    try {
+      return round(evaluate(operation), 6).toString();
+    }
+    catch (error) {
+      alert('The expression is not correct, try to write a another one or correct it.');
+    }
   },
 };
 
